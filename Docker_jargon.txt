@@ -1,0 +1,75 @@
+Create docker image: 	docker build -t <IMAGE_NAME> .
+
+Show Docker images: 	docker images
+
+Run Docker image: 	docker run <IMAGE_ID>
+
+Show running Docker containers: 	docker ps
+
+Show running containers and dead ones: 	docker ps -a
+
+Learn more about a container: docker inspect <CONTAINER_ID>
+
+Logs for a container: docker logs <CONTAINER_ID>
+
+run commands inside container: docker exec -it <CONTAINER_ID> sh
+
+Terminate a Docker container: docker kill <CONTAINER_ID>
+
+tag local image to docker-hub-repo: docker tag simple-node johnnaska/simple-node
+
+Login to docker-hub: docker login --username=<USER_NAME>
+
+push tagged images to container registry: docker push johnnaska/simple-node
+
+pulling an image from registry: docker pull
+
+**********************************************************
+
+docker build . will run the Dockerfile to create an image
+
+docker images will print all the available images
+
+docker run {IMAGE_ID} will run a container with the image
+
+docker ps will print all the running containers
+
+docker kill {CONTAINER_ID} will terminate the container
+
+**********************************************************
+
+Key Terms - Docker
+
+Base Image: 	A set of common dependencies built into a Docker image that acts as a starting point to build an application’s Docker images to reduce build times
+
+Container:	Grouped software dependencies and packages that make it easier and more reliable to deploy software
+
+Container Registry:	A centralized place to store container images
+
+Docker-compose:	A tool used to run multiple Docker containers at once; often used to specify dependent relationships between containers
+
+Dockerfile:	A file containing instructions on how to translate an application into an image that can be run in containers
+
+Ephemeral:	Software property where an application is expected to be short-lived
+
+Image:	A snapshot of dependencies and code used by Docker containers to run an application
+
+*********************************************************
+
+Term			Definition
+
+Base Image		A set of common dependencies built into a Docker image that acts as a starting point to build an application’s Docker images to reduce build times
+
+Container		Grouped software dependencies and packages that make it easier and more reliable to deploy software
+
+Container Registry	A centralized place to store container images
+
+Docker-compose		A tool used to run multiple Docker containers at once; often used to specify dependent relationships between containers
+
+Dockerfile		A file containing instructions on how to translate an application into an image that can be run in containers
+
+Ephemeral		Software property where an application is expected to be short-lived
+
+Image			A snapshot of dependencies and code used by Docker containers to run an application
+
+System Process		A computer program run by the operating system
