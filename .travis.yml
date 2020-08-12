@@ -22,3 +22,6 @@ script:
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push johnnaska/simple-node
+
+#deploy:
+".travis.yml" 27L, 711C

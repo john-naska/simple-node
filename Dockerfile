@@ -1,5 +1,4 @@
-# Use NodeJS base image
-FROM node:13
+FROM johnnaska/slow-node-base:latest
 
 # Create app directory
 WORKDIR /usr/src/app
